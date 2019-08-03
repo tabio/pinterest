@@ -69,7 +69,7 @@ class GetImageFromPinterest
 
     sleep SLEEP_COUNT
 
-    get_image_info_from_next_page(next_url)
+    get_image_info_from_next_page(next_url, board)
   end
 end
 
