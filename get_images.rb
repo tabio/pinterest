@@ -12,7 +12,7 @@ class PinterestResponse
     def parse(response)
       if response['data'].nil?
         pp response
-        exit
+        return []
       end
 
       next_url = response.dig('page', 'next')
