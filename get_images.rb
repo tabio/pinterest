@@ -98,7 +98,7 @@ class DownloadImages
 
           # 画像にLGTMを追加したものを作っておく
           size = font_size(hash['width'], hash['heigh'])
-          cmd = "convert -pointsize #{size} -gravity Center -annotate 0 'LTGM' -fill white #{original_file} #{lgtm_file}"
+          cmd = "convert -pointsize #{size} -gravity Center -annotate 0 'LGTM' -fill white #{original_file} #{lgtm_file}"
           `#{cmd}`
         end
       end
